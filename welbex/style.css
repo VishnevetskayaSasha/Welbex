@@ -23,6 +23,8 @@
 .header__content {
     padding: 46px 0 94px;
     display: flex;
+    z-index: 100;
+    position: relative;
 }
 .header__logo-content {
     max-width: 165px;
@@ -177,6 +179,13 @@
     color: #E4E5EA;
     align-self: end;
     margin-bottom: 124px;
+    transition: opacity 1s, box-shadow 1s;
+    opacity: 1;
+}
+.main__information-button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: 5px 5px 5px 5px #0047ee;
 }
 .footer {
     z-index: 100;
@@ -184,6 +193,8 @@
 .footer__content {
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+    position: relative;
 }
 .footer__menu {
     display: flex;
@@ -285,4 +296,11 @@
 .background_ball-red-small{
     bottom: 122px;
     right: 390px;   
+}
+.link{
+    opacity: 1;
+    transition: opacity .5s;
+}
+.link:hover{
+    opacity: .6;
 }
